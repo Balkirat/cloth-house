@@ -6,16 +6,15 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from "./pages/homepage/homepage";
-import ShopPage from "./pages/shop/shop"
+import ShopPage from "./pages/shop/shop";
+import Header from "./components/Header/header"
 
-const HatsPage = () => (
-  <h1>HATS</h1>
-)
 
 function App() {
   return (
     <div>
       <Router>
+      <Header />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/shop" component={ShopPage} />
