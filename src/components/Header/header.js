@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './header.scss';
 
@@ -34,4 +36,4 @@ const Header = ({ currentUser}) => (
   </div>
 );
 
-export default Header;
+export default connect()(Header);
